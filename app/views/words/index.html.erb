@@ -1,0 +1,17 @@
+  <div class='all'>
+    <div class='top'>
+      <div class='avatar'></div>
+      <p>多的事.你不知道的事</p>
+      <%= link_to 'NEW STORY', new_word_path %>
+    </div>
+   
+      <% @words.each do |word| %>
+      <div class='contents'>   
+        <div class='content_one'>
+          <div class='content'><%= word.content %></div>
+          <div class='content_time'><%= word.created_at %></div>
+        </div>
+      <% end %>
+    </div>
+
+</div>
